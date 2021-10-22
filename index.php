@@ -21,10 +21,10 @@ if(isset($_POST['name'])){
   $phone = $_POST['phone'];
   $desc = $_POST['desc'];
   $sql = "INSERT INTO `travel_form`.`trip` (`Name`, `Age`, `Gender`, `Email`, `Phone`, `Description`, `Date`) VALUES ('$name', '$age', '$gender', '$email', '$phone', '$desc', current_timestamp());";
-  //echo $sql;
+  //echo $sql; 
 
   if($con->query($sql) == true){
-      //echo "Successfully inserted";
+      //echo "Successfully inserted"; 
       $_SESSION['status'] = "<p style='color:green; font-size:20px;'>Thanks for submitting your form.We are happy to see you joining us for the Goa Trip</p>";
       $insert = true;
   }
